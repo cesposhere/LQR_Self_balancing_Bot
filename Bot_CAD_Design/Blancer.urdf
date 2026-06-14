@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<robot name="body">
+    <link name="robot_base">
+        <inertial>
+            <origin rpy="-3.141593 3.141593 -3.141593" xyz="0.000000 0.000000 0.043500" />
+            <inertia izz="0.00035951733333333" iyy="0.00032919933333333" ixz="0.0" iyz="0.0" ixx="0.00027538333333333" ixy="0.0" />
+            <mass value="0.248" />
+        </inertial>
+        <collision name="body">
+            <origin xyz="0.000000 0.000000 0.053500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <box size="0.100000 0.086000 0.077000" />
+            </geometry>
+        </collision>
+        <visual name="body">
+            <origin xyz="0.000000 0.000000 0.053500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <box size="0.100000 0.086000 0.077000" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="0.300000 0.570000 1.000000 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_1.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.964706 0.964706 0.952941 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_2.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.796078 0.796078 0.796078 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_3.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.247059 0.247059 0.247059 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_4.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.952941 0.796078 0.486275 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_5.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.929412 0.807843 0.764706 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_6.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.627451 0.627451 0.627451 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_7.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.266667 0.466667 0.400000 1.0" />
+            </material>
+        </visual>
+        <visual name="SBR_Assembly_7">
+            <origin xyz="0.000000 0.000000 0.005500" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_SBR_Assembly_7_vis_8.dae" />
+            </geometry>
+            <material name="SBR_Assembly_7_material">
+                <color rgba="0.972549 0.968627 0.929412 1.0" />
+            </material>
+        </visual>
+        <visual name="Cone">
+            <origin xyz="0.000000 0.048000 0.081500" rpy="1.570796 3.141593 -3.141593" />
+            <geometry>
+                <mesh filename="Blancer_Cone_vis_1.dae" />
+            </geometry>
+            <material name="Cone_material">
+                <color rgba="0.000000 0.000000 0.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="right_joint">
+        <axis xyz="0 0 1" />
+        <parent link="robot_base" />
+        <child link="right_wheel" />
+        <origin xyz="-0.051325 0.000000 0.020000" rpy="0.000000 -1.570796 0.000000" />
+    </joint>
+    <link name="right_wheel">
+        <inertial>
+            <origin rpy="-3.141593 3.141593 -3.141593" xyz="-0.000000 0.000000 0.009840" />
+            <inertia izz="3.6e-06" iyy="2.2335e-06" ixz="0.0" iyz="0.0" ixx="2.2335e-06" ixy="0.0" />
+            <mass value="0.018" />
+        </inertial>
+        <collision name="right_wheel">
+            <origin xyz="-0.000000 0.000000 0.009840" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <cylinder radius="0.02" length="0.017" />
+            </geometry>
+        </collision>
+        <visual name="right_wheel">
+            <origin xyz="-0.000000 0.000000 0.009840" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <cylinder radius="0.02" length="0.017" />
+            </geometry>
+            <material name="right_wheel_material">
+                <color rgba="0.000000 0.000000 0.000000 1.0" />
+            </material>
+        </visual>
+        <visual name="N20_Wheel_D43_mm_v2_1">
+            <origin xyz="-0.000000 0.000000 0.009840" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="Blancer_N20_Wheel_D43_mm_v2_1_vis_1.dae" />
+            </geometry>
+            <material name="N20_Wheel_D43_mm_v2_1_material">
+                <color rgba="0.152941 0.152941 0.152941 1.0" />
+            </material>
+        </visual>
+        <visual name="N20_Wheel_D43_mm_v2_1">
+            <origin xyz="-0.000000 0.000000 0.009840" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="Blancer_N20_Wheel_D43_mm_v2_1_vis_2.dae" />
+            </geometry>
+            <material name="N20_Wheel_D43_mm_v2_1_material">
+                <color rgba="0.964706 0.964706 0.952941 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="left_joint">
+        <axis xyz="0 0 1" />
+        <parent link="robot_base" />
+        <child link="left_wheel" />
+        <origin xyz="0.051330 0.000000 0.020000" rpy="0.000000 -1.570796 0.000000" />
+    </joint>
+    <link name="left_wheel">
+        <inertial>
+            <origin rpy="-3.141593 3.141593 -3.141593" xyz="0.000000 0.000000 -0.009840" />
+            <inertia izz="3.6e-06" iyy="2.2335e-06" ixz="0.0" iyz="0.0" ixx="2.2335e-06" ixy="0.0" />
+            <mass value="0.018" />
+        </inertial>
+        <collision name="left_wheel">
+            <origin xyz="0.000000 0.000000 -0.009840" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <cylinder radius="0.02" length="0.017" />
+            </geometry>
+        </collision>
+        <visual name="left_wheel">
+            <origin xyz="0.000000 0.000000 -0.009840" rpy="-3.141593 3.141593 -3.141593" />
+            <geometry>
+                <cylinder radius="0.02" length="0.017" />
+            </geometry>
+            <material name="left_wheel_material">
+                <color rgba="0.000000 0.000000 0.000000 1.0" />
+            </material>
+        </visual>
+        <visual name="N20_Wheel_D43_mm_v2_1">
+            <origin xyz="0.000000 0.000000 -0.009840" rpy="3.141593 -1.570796 0.000000" />
+            <geometry>
+                <mesh filename="Blancer_N20_Wheel_D43_mm_v2_1_2_vis_1.dae" />
+            </geometry>
+            <material name="N20_Wheel_D43_mm_v2_1_2_material">
+                <color rgba="0.152941 0.152941 0.152941 1.0" />
+            </material>
+        </visual>
+        <visual name="N20_Wheel_D43_mm_v2_1">
+            <origin xyz="0.000000 0.000000 -0.009840" rpy="3.141593 -1.570796 0.000000" />
+            <geometry>
+                <mesh filename="Blancer_N20_Wheel_D43_mm_v2_1_2_vis_2.dae" />
+            </geometry>
+            <material name="N20_Wheel_D43_mm_v2_1_2_material">
+                <color rgba="0.964706 0.964706 0.952941 1.0" />
+            </material>
+        </visual>
+    </link>
+</robot>
