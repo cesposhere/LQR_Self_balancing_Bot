@@ -33,5 +33,5 @@ For the URDF to render correctly in 3D viewers, ensure all exported `.dae` mesh 
 2. Run the main control script:
 ```bash
 python task1b_solution.py
-
+```
 To get the Q matrix Use LQR_q_solve.py 
